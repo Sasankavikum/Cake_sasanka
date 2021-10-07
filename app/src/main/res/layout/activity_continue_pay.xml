@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContinuePayActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/text_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_marginRight="20dp"
+            android:text="Phone Number"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Address"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/text_phone_number"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/text_town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Town"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/text_address"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/payment_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="5sp"
+        android:src="@drawable/payment" />
+
+
+    <LinearLayout
+        android:id="@+id/linear5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear4"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/sub_tol"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Sub Total : "
+            android:textSize="20dp"
+            android:layout_above="@+id/confirm_payment"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/sub_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sub total"
+            android:textSize="22dp"
+            android:layout_above="@+id/confirm_payment"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/del_fee"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Delivery Fee : "
+            android:textSize="20dp"
+            android:layout_above="@+id/confirm_payment"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/delivery_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs 250"
+            android:textSize="21dp"
+            android:layout_above="@+id/confirm_payment"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirm_payment"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/tal_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount :   Rs"
+            android:textSize="30dp"
+            android:layout_above="@+id/confirm_payment"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="33dp"
+            android:layout_above="@+id/confirm_payment"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:text="Confirm to pay"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>
